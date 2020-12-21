@@ -4,8 +4,8 @@
   "description": "backend for reddit clone",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "server": "nodemon server"
+    "test": "cross-env NODE_ENV=production node server",
+    "dev": "cross-env NODE_ENV=development nodemon server"
   },
   "author": "Rahul Jawale",
   "license": "MIT",
