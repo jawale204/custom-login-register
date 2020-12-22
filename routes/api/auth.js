@@ -43,7 +43,7 @@ router.post('/register',[
    }
 })
 
-router.get('/login',[
+router.post('/login',[
     body('email',"Email is required").isEmail(),
     body('password',"Password is required").isLength({min:6})
 ],async(req,res)=>{
