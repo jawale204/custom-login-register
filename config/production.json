@@ -1,4 +1,0 @@
-{
-    "secret":"myredditsecret",
-    "mongodbURI":"mongodb+srv://rahul204:r@ni45Rahul@redback.5mhgy.mongodb.net/RedBack?retryWrites=true&w=majority"
-}
