@@ -89,7 +89,7 @@ router.post('/login',[
     try{
     const user=await User.findOne({email:req.body.email})
     if(!user){
-        return res.status(400).json({msg:"Invalid credentials"})
+        return res.status(404).json({msg:"Invalid credentials"})
     }
     const isMatch=await bcrypt.compare(req.body.password,user.password)
     if(!isMatch){

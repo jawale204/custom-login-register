@@ -88,7 +88,7 @@ body('password',"password is required").not().isEmpty()
             },(err,info)=>{
                 if (err) {
                     console.log(err)
-                    return res.send({msg:"verification failed"})
+                    return res.ststus(400).json({msg:"verification failed"})
             }
               console.log(info);
               transporter.close()
